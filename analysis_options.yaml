@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # This file configures the static analysis results for your project (errors,
 # warnings, and lints).
 #
@@ -28,3 +29,24 @@ include: package:lints/recommended.yaml
 
 # For additional information about configuring this file, see
 # https://dart.dev/guides/language/analysis-options
+=======
+include: package:very_good_analysis/analysis_options.yaml
+
+linter:
+  rules:
+    prefer_double_quotes: true
+    prefer_single_quotes: false
+    public_member_api_docs: false
+    cascade_invocations: false
+    lines_longer_than_80_chars: false
+    
+formatter:
+  page_width: 90
+  trailing_commas: preserve 
+
+analyzer:
+  errors:
+    invalid_annotation_target: ignore
+  plugins:
+    - custom_lint
+>>>>>>> projects/cats

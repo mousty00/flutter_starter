@@ -14,8 +14,4 @@
             "source.organizeImports": "explicit"
         }
     },
-    "dart.flutterSdkPath": "/Users/venir/.local/share/mise/installs/flutter/3.38.1-stable",
-    "debug.javascript.defaultRuntimeExecutable": {
-        "pwa-node": "/Users/venir/.local/share/mise/shims/node"
-    }
 }

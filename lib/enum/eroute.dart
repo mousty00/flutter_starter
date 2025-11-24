@@ -14,6 +14,7 @@ extension ERoute on RoutesTypeDef {
       CustomRoute(path: "/jokes", label: "jokes"),
       CustomRoute(path: "/cats", label: "cats"),
       CustomRoute(path: "/cats/:status", label: "cat"),
+      CustomRoute(path: "/dogs", label: "dogs"),
     ];
   }
 }

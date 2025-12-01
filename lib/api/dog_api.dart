@@ -16,7 +16,7 @@ class DogApi {
 
   Future<DogApiModel> fetchDogs(String dogType) async {
     final result = await client.get<Map<String, Object?>>(
-      "https://dog.ceo/api/breed/$dogType/images",
+      "/$dogType/images",
     );
 
     return DogApiModel.fromJson(result.data!);

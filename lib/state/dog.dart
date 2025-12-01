@@ -7,7 +7,7 @@ part "dog.g.dart";
 
 @riverpod
 FutureOr<DogModel> dogImages(Ref ref, String? q) {
-  final client = ref.watch(httpClientProvider);
+  final client = ref.watch(httpClientProvider("https://dog.ceo/api/breed"));
   final api = ref.watch(dogApiProvider(client));
   if (q == null || q.isEmpty) {
     return api.fetchDogs("hound");

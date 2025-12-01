@@ -2,10 +2,18 @@ import "package:color_changer/router.dart";
 import "package:color_changer/state/theme_controller.dart";
 import "package:flutter/material.dart";
 import "package:flutter_riverpod/flutter_riverpod.dart";
+import "package:talker_riverpod_logger/talker_riverpod_logger.dart";
 
 void main() {
   runApp(
     ProviderScope(
+      observers: [
+        TalkerRiverpodObserver(
+          settings: const TalkerRiverpodLoggerSettings(
+            printProviderDisposed: true,
+          ),
+        ),
+      ],
       retry: (retryCount, error) {
         return null;
       },

@@ -7,7 +7,7 @@ part "cats.g.dart";
 
 @riverpod
 Future<List<CatModel>> cats(Ref ref) {
-  final client = ref.watch(httpClientProvider);
+  final client = ref.watch(httpClientProvider("https://http.cat"));
   final api = ref.watch(catApiProvider(client));
 
   return api.list();
